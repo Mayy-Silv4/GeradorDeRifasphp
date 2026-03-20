@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #a2d2ff, #bde0fe);
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* formulário */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+    margin: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    background: #3a86ff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #265df2;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ticket */
+.bilhete {
+    display: flex;
+    width: 420px;
+    background: white;
+    border-radius: 12px;
+    margin: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.bilhete:hover {
+    transform: scale(1.05);
+}
+
+/* parte principal */
+.ticket-main {
+    flex: 3;
+    padding: 15px;
+    text-align: left;
+}
+
+/* linha pontilhada */
+.ticket-divider {
+    width: 2px;
+    border-left: 2px dashed #000;
+}
+
+/* canhoto */
+.ticket-stub {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background: #f1faff;
+}
+
+/* textos */
+.titulo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.numero {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d90429;
+    margin-top: 10px;
+}
+
+/* campo comprador */
+.comprador {
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+/* botão imprimir */
+.print-btn {
+    margin-top: 30px;
+    background: green;
+}
+
+.print-btn:hover {
+    background: darkgreen;
+}
+
+/* impressão */
+@media print {
+    button, form {
+        display: none;
+    }
+}
+
+.back-btn {
+    margin-top: 10px;
+    background: #6c757d;
+}
+
+.back-btn:hover {
+    background: #495057;
+}
